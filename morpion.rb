@@ -1,10 +1,16 @@
 require 'colorize'
 
-class Board
+class Boardcase
 # on cree un array avec des hashs comportant les cases vides
     @@rows = [@@row1 = {:a1 => ' ', :b1 => ' ', :c1 => ' '},
               @@row2 = {:a2 => ' ', :b2 => ' ', :c2 => ' '},
               @@row3 = {:a3 => ' ', :b3 => ' ', :c3 => ' '}]
+end
+
+
+class Board < Boardcase
+
+
  
     def initialize
 # on definit le constructeur avec les variables d'instances
@@ -35,7 +41,7 @@ class Board
         puts "   --------------  ".colorize(:red)  
         puts " |  #{@@row2[:a2]}  |  #{@@row2[:b2]}   |  #{@@row2[:c2]} | 2 ".colorize(:blue)
         puts "   --------------  ".colorize(:red)  
-        puts " | #{@@row3[:a3]}  |  #{@@row3[:b3]}   |  #{@@row3[:c3]} |  3 ".colorize(:blue)
+        puts " |  #{@@row3[:a3]}  |  #{@@row3[:b3]}   |  #{@@row3[:c3]} |  3 ".colorize(:blue)
 
     end
 
