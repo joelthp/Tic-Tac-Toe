@@ -9,9 +9,7 @@ end
 
 
 class Board < Boardcase
-
-
- 
+    
     def initialize
 # on definit le constructeur avec les variables d'instances
         puts "Joueurs créés...".colorize(:blue)
