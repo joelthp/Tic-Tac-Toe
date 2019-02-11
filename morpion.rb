@@ -1,8 +1,8 @@
 require 'colorize'
-
+d
 class Boardcase
 # on cree un array avec des hashs comportant les cases vides
-    @@rows = [@@row1 = {:a1 => ' ', :b1 => ' ', :c1 => ' '},
+    @@rows = [@@row1 = {:a1 => ' ', :b1 => ' ', :c1 => ' '},ß
               @@row2 = {:a2 => ' ', :b2 => ' ', :c2 => ' '},
               @@row3 = {:a3 => ' ', :b3 => ' ', :c3 => ' '}]
 end
